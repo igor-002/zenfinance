@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ajuste para dispositivos móveis (evita cortes na tela) */
+@supports (padding-top: env(safe-area-inset-top)) {
+  .pt-safe-top { padding-top: env(safe-area-inset-top); }
+  .pb-safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+}
